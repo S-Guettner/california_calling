@@ -76,12 +76,17 @@ header .headerFlexContainer {
 /* ============ main ============= */
 /* ============ main ============= */
 /* ============ main ============= */
+main {
+  /* intro section */
+  /* image section */
+}
 main .mainIntroSection {
   background-color: #000;
   background-image: url("../img/map.svg");
   background-repeat: no-repeat;
   background-position: 100% 85%;
   background-size: 37%;
+  margin-bottom: 30vh;
 }
 main .mainIntroSection .mainIntroText {
   color: #fff;
@@ -94,4 +99,63 @@ main .mainIntroSection article {
 main .mainIntroSection .mainIntroBulletpoints h3 {
   padding-bottom: 7vh;
   font-size: 4rem;
+}
+main .mainImageSection .imageSectionHeadline {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70vh;
+}
+main .mainImageSection .imageSectionHeadline h2 {
+  margin: auto;
+  font-size: 3.5rem;
+  width: 30rem;
+  line-height: 0.8;
+  margin-bottom: 1rem;
+}
+main .mainImageSection .imageSectionHeadline p {
+  text-align: center;
+  width: 20rem;
+  line-height: 1.3;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+main .mainImageSection .secondTextImageSection {
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.3;
+}
+main .mainImageSection img {
+  width: 200px;
+}
+main .mainImageSection .imageSectionImg1 {
+  position: relative;
+  left: 65vw;
+  top: -1170px;
+}
+main .mainImageSection .imageSectionImg2 {
+  position: relative;
+  left: -17vw;
+  top: -950px;
+}
+main .mainImageSection .imageSectionImg3 {
+  position: relative;
+  left: 43vw;
+  top: -85vh;
+}
+main .mainImageSection .imageSectionImg4 {
+  position: relative;
+  left: -35vw;
+  top: -450px;
+}
+main .mainImageSection .imageSectionImg5 {
+  position: relative;
+  top: -47vh;
+  left: -7vw;
+}
+main .mainImageSection .imageSectionImg6 {
+  position: relative;
+  left: -80vw;
+  top: -20vh;
 }/*# sourceMappingURL=style.css.map */
