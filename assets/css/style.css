@@ -1,0 +1,65 @@
+/* ============ imports ============= */ /* ============ colors ============= */
+/* ============ colors ============= */
+/* ============ fonts ============= */
+@font-face {
+  font-family: "lora";
+  src: url("../fonts/Lora/Lora-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "worksans";
+  src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+.fontLora {
+  font-family: "lora";
+}
+
+.fontWorkSans {
+  font-family: "worksans";
+}
+
+/* ============ global ============= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============ header ============= */
+/* ============ header ============= */
+/* ============ header ============= */
+header {
+  background-color: #000;
+  color: #fff;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  /* ======= headline ======== */
+}
+header .headerLine {
+  background-color: #333333;
+  width: 1px;
+  height: 25vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10vh;
+}
+header .headlineHeader {
+  text-align: center;
+  margin-bottom: 25vh;
+}
+header .headlineHeader p:first-of-type {
+  margin-bottom: 0.5rem;
+}
+header .headlineHeader h1 {
+  font-size: 5rem;
+  margin-bottom: 0.7rem;
+  line-height: 0.8;
+}
+header .headlineHeader h1 span {
+  color: #000;
+  -webkit-text-stroke: 1px white;
+}
+header .headerFlexContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15.5vh;
+}/*# sourceMappingURL=style.css.map */
