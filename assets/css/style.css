@@ -80,18 +80,18 @@ main .mainIntroSection {
   background-color: #000;
   background-image: url("../img/map.svg");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: 100% 85%;
   background-size: 37%;
 }
 main .mainIntroSection .mainIntroText {
   color: #fff;
-  width: 85%;
+  width: 95%;
   margin-bottom: 10vh;
 }
 main .mainIntroSection article {
   color: white;
 }
 main .mainIntroSection .mainIntroBulletpoints h3 {
-  padding-bottom: 4vh;
+  padding-bottom: 7vh;
   font-size: 4rem;
 }/*# sourceMappingURL=style.css.map */

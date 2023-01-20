@@ -79,11 +79,11 @@ main{
         background-color: $black;
         background-image: url("../img/map.svg");
         background-repeat: no-repeat;
-        background-position: right bottom;
+        background-position: 100% 85%;
         background-size: 37%;
         .mainIntroText{
             color: $white;
-            width: 85%;
+            width: 95%;
             margin-bottom: 10vh;
         }
         article{
@@ -91,7 +91,7 @@ main{
         }
         .mainIntroBulletpoints{
             h3{
-                padding-bottom: 4vh;
+                padding-bottom: 7vh;
                 font-size: 4rem;
             }
         }
