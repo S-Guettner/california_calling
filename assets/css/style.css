@@ -24,14 +24,21 @@
   box-sizing: border-box;
 }
 
+.paddingX {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.headlineFontSize {
+  font-size: 6rem;
+}
+
 /* ============ header ============= */
 /* ============ header ============= */
 /* ============ header ============= */
 header {
   background-color: #000;
   color: #fff;
-  padding-left: 5vw;
-  padding-right: 5vw;
   /* ======= headline ======== */
 }
 header .headerLine {
@@ -45,12 +52,14 @@ header .headerLine {
 header .headlineHeader {
   text-align: center;
   margin-bottom: 25vh;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 header .headlineHeader p:first-of-type {
   margin-bottom: 0.5rem;
 }
 header .headlineHeader h1 {
-  font-size: 5rem;
   margin-bottom: 0.7rem;
   line-height: 0.8;
 }
@@ -61,5 +70,308 @@ header .headlineHeader h1 span {
 header .headerFlexContainer {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 15.5vh;
+  padding-bottom: 15vh;
+}
+
+/* ============ main ============= */
+/* ============ main ============= */
+/* ============ main ============= */
+main {
+  /* intro section */
+  /* image section */
+}
+main .mainIntroSection {
+  background-color: #000;
+  background-image: url("../img/map.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 85%;
+  background-size: 37%;
+  margin-bottom: 30vh;
+}
+main .mainIntroSection .mainIntroText {
+  color: #fff;
+  width: 78%;
+  margin-bottom: 10vh;
+  font-size: 4.7rem;
+}
+main .mainIntroSection article {
+  color: white;
+}
+main .mainIntroSection .mainIntroBulletpoints h3 {
+  padding-bottom: 7vh;
+  font-size: 4rem;
+}
+main .mainImageSection {
+  position: relative;
+  margin-bottom: 12vh;
+}
+main .mainImageSection .imageSectionHeadline {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50vh;
+}
+main .mainImageSection .imageSectionHeadline h2 {
+  margin: auto;
+  font-size: 3.5rem;
+  width: 30rem;
+  line-height: 0.8;
+  margin-bottom: 1rem;
+}
+main .mainImageSection .imageSectionHeadline p {
+  text-align: center;
+  width: 20rem;
+  line-height: 1.3;
+}
+main .mainImageSection .secondTextImageSection {
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.3;
+}
+main .mainImageSection img {
+  width: 200px;
+}
+main .mainImageSection .imageSectionImg1 {
+  margin-top: -500px;
+  position: absolute;
+  left: 60%;
+  top: 20%;
+}
+main .mainImageSection .imageSectionImg2 {
+  position: absolute;
+  left: 5%;
+  top: -7%;
+  z-index: -1;
+}
+main .mainImageSection .imageSectionImg3 {
+  position: absolute;
+  right: 0;
+  top: 10%;
+}
+main .mainImageSection .imageSectionImg4 {
+  position: absolute;
+  left: 20%;
+  top: 35%;
+}
+main .mainImageSection .imageSectionImg5 {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+}
+main .mainImageSection .imageSectionImg6 {
+  position: absolute;
+  left: 0;
+  top: 70%;
+}
+main .mainImageSection .imageSectionImg7 {
+  position: absolute;
+  left: 60%;
+  top: 104%;
+  z-index: 2;
+}
+main .mainSectionOne {
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 55vh;
+  position: relative;
+}
+main .mainSectionOne .mainSectionOneArticleFlex {
+  display: flex;
+  padding-top: 18vh;
+  margin-bottom: 30vh;
+}
+main .mainSectionOne .mainSectionOneArticleFlex div {
+  width: 50%;
+}
+main .mainSectionOne .mainSectionOneArticleFlex div .sectionHeadline {
+  font-size: 4rem;
+  width: 50%;
+}
+main .mainSectionOne .mainSectionOneArticleFlex div .sectionText {
+  width: 70%;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+main .mainSectionOne .mainSectionOneArticleFlex div .sectionNumber {
+  margin-bottom: 1.5rem;
+}
+main .mainSectionOne .largeImg {
+  width: 50%;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+}
+main .mainSectionOne .smallImg {
+  width: 25%;
+  position: absolute;
+  left: 50%;
+  top: 63%;
+}
+main .mainSectionTwo {
+  /* mit min-height kein y-scroll */
+  min-height: 150vh;
+  /*         margin-bottom: 20vh; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+main .mainSectionTwo .circleContainer {
+  position: relative;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  40% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+main .mainSectionTwo .circleContainer .circle {
+  position: absolute;
+  left: 87%;
+  top: 10%;
+  width: 35%;
+  margin-top: -5rem;
+  animation: rotate;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+main .mainSectionTwo .smallerImageContainer {
+  /*                 position: relative; */
+}
+main .mainSectionTwo .smallerImageContainer .smallerImage {
+  position: absolute;
+  width: 30%;
+  left: 15%;
+  top: 38%;
+  z-index: 2;
+}
+main .mainSectionTwo .biggerImageContainer {
+  /*                 position: relative; */
+  /*                 top: 42%; */
+}
+main .mainSectionTwo .biggerImageContainer .biggerImage {
+  position: absolute;
+  width: 50%;
+  top: 30%;
+  left: 40%;
+}
+main .mainSectionTwo .mainSectionTwoArticleFlex {
+  position: absolute;
+  display: flex;
+  padding-top: 15vh;
+  margin-bottom: 10vh;
+}
+main .mainSectionTwo .mainSectionTwoArticleFlex div {
+  width: 50%;
+}
+main .mainSectionTwo .mainSectionTwoArticleFlex div .sectionHeadline {
+  font-size: 4rem;
+  width: 50%;
+}
+main .mainSectionTwo .mainSectionTwoArticleFlex div .sectionText {
+  width: 70%;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+main .mainSectionTwo .mainSectionTwoArticleFlex div .sectionNumber {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+footer article {
+  width: 40%;
+  font-size: 1.5rem;
+  margin-top: -20rem;
+  position: absolute;
+  top: 95%;
+}
+footer article p:first-of-type {
+  margin-bottom: 1rem;
+}
+footer article p:nth-of-type(2) {
+  margin-bottom: 1rem;
+}
+@keyframes banner {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(40%);
+  }
+}
+footer .movingBanner {
+  position: absolute;
+  left: 32%;
+  height: 5rem;
+  width: 80rem;
+  background-color: white;
+  rotate: 40deg;
+  font-weight: bold;
+}
+footer .bannerText {
+  display: flex;
+  font-size: 4rem;
+  width: 100%;
+  /* padding-left: 4rem; */
+  animation: banner 10s infinite linear;
+  color: black;
+}
+footer .bannerText span {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: white;
+  -webkit-text-stroke: 1px #000;
+}
+footer .social {
+  position: absolute;
+  top: 78%;
+  left: 3.2%;
+  padding-left: 1rem;
+}
+footer .social p {
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+footer .social img {
+  width: 1.7rem;
+  margin: 0.5rem;
+}
+footer .logos {
+  position: absolute;
+  left: 78%;
+  top: 72%;
+}
+footer .logos img {
+  width: 6rem;
+}
+
+.button {
+  padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  transition-duration: 1s;
+}
+.button:hover {
+  background-color: #fff;
+  color: #000;
 }/*# sourceMappingURL=style.css.map */

@@ -24,17 +24,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.paddingX{
+    padding-left:5vw;
+    padding-right: 5vw;
+}
+.headlineFontSize{
+    font-size: 6rem;
+}
 /* ============ header ============= */
 /* ============ header ============= */
 /* ============ header ============= */
-
-
 header{
     background-color:$black;
     color: $white;
-    padding-left:5vw;
-    padding-right: 5vw;
         .headerLine{
             background-color: $grey;
             width: 1px;
@@ -46,11 +48,13 @@ header{
         .headlineHeader{
             text-align: center;
             margin-bottom: 25vh;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
                 p:first-of-type{
                     margin-bottom: .5rem;
                 }
         h1{
-            font-size: 5rem;
             margin-bottom: .7rem;
             line-height: .8;
                 span{
@@ -62,10 +66,305 @@ header{
         .headerFlexContainer{
             display: flex;
             justify-content: space-between;
-            padding-bottom: 15.5vh;
+            padding-bottom: 15vh;
         }
 }
 
+/* ============ main ============= */
+/* ============ main ============= */
+/* ============ main ============= */
+main{
+    /* intro section */
+    .mainIntroSection{
+        background-color: $black;
+        background-image: url("../img/map.svg");
+        background-repeat: no-repeat;
+        background-position: 100% 85%;
+        background-size: 37%;
+        margin-bottom: 30vh;
+        .mainIntroText{
+            color: $white;
+            width: 78%;
+            margin-bottom: 10vh;
+            font-size: 4.7rem;
+        }
+        article{
+            color: white;
+        }
+        .mainIntroBulletpoints{
+            h3{
+                padding-bottom: 7vh;
+                font-size: 4rem;
+            }
+        }
+    }
+    /* image section */
+    .mainImageSection{
+        position: relative;
+        margin-bottom: 12vh;
+        .imageSectionHeadline{
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50vh;
+            h2{
+                margin: auto;
+                font-size: 3.5rem;
+                width: 30rem;
+                line-height: 0.8;
+                margin-bottom: 1rem;
+            }
+            p{
+                text-align: center;
+                width: 20rem;
+                line-height: 1.3;
+            }
+        }
+        .secondTextImageSection{
+            width: 30vw;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.3;
+        }
+        img{
+            width: 200px;
+        }
+        .imageSectionImg1{
+            margin-top: -500px;
+            position: absolute;
+            left: 60%;
+            top: 20%;
+        }
+        .imageSectionImg2{
+            position: absolute;
+            left: 5%;
+            top: -7%;
+            z-index: -1;
+        }
+        .imageSectionImg3{
+            position: absolute;
+            right: 0;
+            top: 10%;
+        }
+        .imageSectionImg4{
+            position: absolute;
+            left: 20%;
+            top: 35%;
+        }
+        .imageSectionImg5{
+            position: absolute;
+            top: 40%;
+            left: 60%;
+        }
+        .imageSectionImg6{
+            position: absolute;
+            left: 0;
+            top: 70%;
+        }
+        .imageSectionImg7{
+            position: absolute;
+            left: 60%;
+            top: 104%;
+            z-index: 2;
+        }
+    }
+    .mainSectionOne{
+        background-color: $black;
+        color: $white;
+        padding-bottom: 55vh;
+        position: relative;
+        .mainSectionOneArticleFlex{
+            display: flex;
+            padding-top: 18vh;
+            margin-bottom: 30vh;
+            div{
+                width: 50%;
+                .sectionHeadline{
+                    font-size: 4rem;
+                    width: 50%;
+                }
+                .sectionText{
+                    width: 70%;
+                    font-size: 1.5rem;
+                    margin-bottom: 1.5rem
+                }
+                .sectionNumber{
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+        .largeImg{
+            width: 50%;
+            position: absolute;
+            top: 45%;
+            left: 10%;
+        }
+        .smallImg{
+            width: 25%;
+            position: absolute;
+            left: 50%;
+            top: 63%;
+        }
+    }
+    .mainSectionTwo{
+        /* mit min-height kein y-scroll */
+        min-height: 150vh;
+/*         margin-bottom: 20vh; */
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
+        .circleContainer{
+            position: relative;
+            @keyframes rotate {
+                0%{transform: rotate(0deg)};
+                20%{transform:rotate(90deg)}
+                40%{transform: rotate(180deg)}
+                60%{transform: rotate(270deg)}
+                100%{transform: rotate(359deg)}
+            }
+            .circle{
+                position: absolute;
+                left: 87%;
+                top: 10%;
+                width: 35%;
+                margin-top: -5rem;
+                animation: rotate;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        }
+            .smallerImageContainer{
+/*                 position: relative; */
+
+                .smallerImage{
+                    position: absolute;
+                    width: 30%;
+                    left: 15%;
+                    top: 38%;
+                    z-index: 2;
+                }
+            }
+            .biggerImageContainer{
+/*                 position: relative; */
+/*                 top: 42%; */
+                .biggerImage{
+                    position: absolute;
+                    width: 50%;
+                    top: 30%;
+                    left:40%;
+                }
+            }
+        .mainSectionTwoArticleFlex{
+            position: absolute;
+            display: flex;
+            padding-top: 15vh;
+            margin-bottom: 10vh;
+            div{
+                width: 50%;
+                .sectionHeadline{
+                    font-size: 4rem;
+                    width: 50%;
+                }
+                .sectionText{
+                    width: 70%;
+                    font-size: 1.5rem;
+                    margin-bottom: 1.5rem
+                }
+                .sectionNumber{
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+}
+footer{
+    background-color: $black;
+    color: white;
+    height: 50vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+
+
+
+    article{
+        width: 40%;
+        font-size: 1.5rem;
+        margin-top: -20rem;
+        position: absolute;
+        top: 95%;
+        p:first-of-type{
+            margin-bottom: 1rem;
+        }
+        p:nth-of-type(2){
+            margin-bottom: 1rem;
+        }
+
+    }
+    @keyframes banner {
+        0%{transform: translateX(-20%);}
+        100%{transform: translateX(40%);}
+    }
+        .movingBanner{
+            position: absolute;
+            left: 32%;
+            height: 5rem;
+            width: 80rem;
+            background-color: white;
+            rotate: 40deg;
+            font-weight: bold;
+            }
+        .bannerText{
+            display: flex;
+            font-size: 4rem;
+            width: 100%;
+            /* padding-left: 4rem; */
+            animation: banner 10s infinite linear;
+            color: black;
+            span{
+                margin-left: 1rem;
+                margin-right: 1rem;
+                color: white;
+                -webkit-text-stroke: 1px $black;
+            }
+    }
+    .social{
+        position: absolute;
+        top: 78%;
+        left: 3.2%;
+        padding-left: 1rem;
+        p{
+            padding-left: .5rem;
+            margin-bottom: .5rem;
+        }
+        img{
+            width: 1.7rem;
+            margin: .5rem;
+        }
+    }
+    .logos{
+        position: absolute;
+        left: 78%;
+        top: 72%;
+        img{
+            width: 6rem;
+        }
+    }
+
+    
+}
+.button{
+    padding: .7rem 1.2rem .7rem 1.2rem;
+    background-color: $black;
+    color: $white;
+    border: 1px solid $white;
+    transition-duration: 1s;
+    &:hover{
+        background-color: $white;
+        color: $black;
+    }
+}
 
 
 
