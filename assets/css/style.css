@@ -302,7 +302,7 @@ footer article {
   font-size: 1.5rem;
   margin-top: -20rem;
   position: absolute;
-  top: 100%;
+  top: 95%;
 }
 footer article p:first-of-type {
   margin-bottom: 1rem;
@@ -362,4 +362,16 @@ footer .logos {
 }
 footer .logos img {
   width: 6rem;
+}
+
+.button {
+  padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  transition-duration: 1s;
+}
+.button:hover {
+  background-color: #fff;
+  color: #000;
 }/*# sourceMappingURL=style.css.map */

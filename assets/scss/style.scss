@@ -293,7 +293,7 @@ footer{
         font-size: 1.5rem;
         margin-top: -20rem;
         position: absolute;
-        top: 100%;
+        top: 95%;
         p:first-of-type{
             margin-bottom: 1rem;
         }
@@ -353,6 +353,17 @@ footer{
     }
 
     
+}
+.button{
+    padding: .7rem 1.2rem .7rem 1.2rem;
+    background-color: $black;
+    color: $white;
+    border: 1px solid $white;
+    transition-duration: 1s;
+    &:hover{
+        background-color: $white;
+        color: $black;
+    }
 }
 
 
