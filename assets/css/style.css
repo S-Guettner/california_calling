@@ -52,7 +52,7 @@ header .headerLine {
 header .headlineHeader {
   text-align: center;
   margin-bottom: 25vh;
-  width: 50%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -70,7 +70,7 @@ header .headlineHeader h1 span {
 header .headerFlexContainer {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 15.5vh;
+  padding-bottom: 15vh;
 }
 
 /* ============ main ============= */
@@ -90,8 +90,9 @@ main .mainIntroSection {
 }
 main .mainIntroSection .mainIntroText {
   color: #fff;
-  width: 95%;
+  width: 78%;
   margin-bottom: 10vh;
+  font-size: 4.7rem;
 }
 main .mainIntroSection article {
   color: white;
@@ -100,11 +101,15 @@ main .mainIntroSection .mainIntroBulletpoints h3 {
   padding-bottom: 7vh;
   font-size: 4rem;
 }
+main .mainImageSection {
+  position: relative;
+  margin-bottom: 12vh;
+}
 main .mainImageSection .imageSectionHeadline {
   width: 400px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 70vh;
+  margin-bottom: 50vh;
 }
 main .mainImageSection .imageSectionHeadline h2 {
   margin: auto;
@@ -130,32 +135,61 @@ main .mainImageSection img {
   width: 200px;
 }
 main .mainImageSection .imageSectionImg1 {
-  position: relative;
-  left: 65vw;
-  top: -1170px;
+  margin-top: -500px;
+  position: absolute;
+  left: 60%;
+  top: 20%;
 }
 main .mainImageSection .imageSectionImg2 {
-  position: relative;
-  left: -17vw;
-  top: -950px;
+  position: absolute;
+  left: 5%;
+  top: -7%;
 }
 main .mainImageSection .imageSectionImg3 {
-  position: relative;
-  left: 43vw;
-  top: -85vh;
+  position: absolute;
+  right: 0;
+  top: 10%;
 }
 main .mainImageSection .imageSectionImg4 {
-  position: relative;
-  left: -35vw;
-  top: -450px;
+  position: absolute;
+  left: 20%;
+  top: 35%;
 }
 main .mainImageSection .imageSectionImg5 {
-  position: relative;
-  top: -47vh;
-  left: -7vw;
+  position: absolute;
+  top: 40%;
+  left: 60%;
 }
 main .mainImageSection .imageSectionImg6 {
-  position: relative;
-  left: -80vw;
-  top: -20vh;
+  position: absolute;
+  left: 0;
+  top: 70%;
+}
+main .mainImageSection .imageSectionImg7 {
+  position: absolute;
+  left: 60%;
+  top: 104%;
+}
+main .mainSectionOne {
+  background-color: #000;
+  color: #fff;
+}
+main .mainSectionOne .mainSectionOneArticleFlex {
+  display: flex;
+  padding-top: 18vh;
+}
+main .mainSectionOne .mainSectionOneArticleFlex div {
+  width: 50%;
+}
+main .mainSectionOne .mainSectionOneArticleFlex div .sectionHeadline {
+  font-size: 4rem;
+  width: 50%;
+}
+main .mainSectionOne .mainSectionOneArticleFlex div .sectionText {
+  width: 70%;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+main .mainSectionOne .mainSectionOneArticleFlex div .sectionNumber {
+  margin-bottom: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
