@@ -30,7 +30,7 @@
 }
 
 .headlineFontSize {
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 /* ============ header ============= */
@@ -52,6 +52,9 @@ header .headerLine {
 header .headlineHeader {
   text-align: center;
   margin-bottom: 25vh;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 header .headlineHeader p:first-of-type {
   margin-bottom: 0.5rem;
@@ -78,10 +81,17 @@ main .mainIntroSection {
   background-image: url("../img/map.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
+  background-size: 37%;
 }
 main .mainIntroSection .mainIntroText {
   color: #fff;
+  width: 85%;
+  margin-bottom: 10vh;
 }
 main .mainIntroSection article {
   color: white;
+}
+main .mainIntroSection .mainIntroBulletpoints h3 {
+  padding-bottom: 4vh;
+  font-size: 4rem;
 }/*# sourceMappingURL=style.css.map */
