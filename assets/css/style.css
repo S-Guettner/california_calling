@@ -296,22 +296,19 @@ footer {
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
-  /*     .movingBannerContainer{
-          position: relative;
-          top: 20%; */
-  /* 
-          span{
-              color: white;
-              -webkit-text-stroke: 1px $black;
-          } */
 }
 footer article {
-  width: 50%;
+  width: 40%;
   font-size: 1.5rem;
   margin-top: -20rem;
   position: absolute;
   top: 100%;
-  /* padding-bottom: 20rem; */
+}
+footer article p:first-of-type {
+  margin-bottom: 1rem;
+}
+footer article p:nth-of-type(2) {
+  margin-bottom: 1rem;
 }
 @keyframes banner {
   0% {
@@ -337,11 +334,32 @@ footer .bannerText {
   /* padding-left: 4rem; */
   animation: banner 10s infinite linear;
   color: black;
-  /*  } */
 }
 footer .bannerText span {
   margin-left: 1rem;
   margin-right: 1rem;
   color: white;
   -webkit-text-stroke: 1px #000;
+}
+footer .social {
+  position: absolute;
+  top: 78%;
+  left: 3.2%;
+  padding-left: 1rem;
+}
+footer .social p {
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+footer .social img {
+  width: 1.7rem;
+  margin: 0.5rem;
+}
+footer .logos {
+  position: absolute;
+  left: 78%;
+  top: 72%;
+}
+footer .logos img {
+  width: 6rem;
 }/*# sourceMappingURL=style.css.map */
