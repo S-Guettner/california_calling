@@ -24,17 +24,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.paddingX{
+    padding-left:5vw;
+    padding-right: 5vw;
+}
+.headlineFontSize{
+    font-size: 5rem;
+}
 /* ============ header ============= */
 /* ============ header ============= */
 /* ============ header ============= */
-
-
 header{
     background-color:$black;
     color: $white;
-    padding-left:5vw;
-    padding-right: 5vw;
         .headerLine{
             background-color: $grey;
             width: 1px;
@@ -50,7 +52,6 @@ header{
                     margin-bottom: .5rem;
                 }
         h1{
-            font-size: 5rem;
             margin-bottom: .7rem;
             line-height: .8;
                 span{
@@ -66,7 +67,24 @@ header{
         }
 }
 
-
+/* ============ main ============= */
+/* ============ main ============= */
+/* ============ main ============= */
+main{
+    
+    .mainIntroSection{
+        background-color: $black;
+        background-image: url("../img/map.svg");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        .mainIntroText{
+            color: $white;
+        }
+        article{
+            color: white;
+        }
+    }
+}
 
 
 
