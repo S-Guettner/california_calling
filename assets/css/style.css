@@ -79,20 +79,6 @@ header .headerFlexContainer {
 main {
   /* intro section */
   /* image section */
-  /*         .imgTest{
-              position: relative;
-              .largeImg{
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  width: 20%;
-              }
-              .smallImg{
-                  position: absolute;
-                  width: 20%;
-                  top:50%
-          }
-      } */
 }
 main .mainIntroSection {
   background-color: #000;
@@ -156,6 +142,7 @@ main .mainImageSection .imageSectionImg2 {
   position: absolute;
   left: 5%;
   top: -7%;
+  z-index: -1;
 }
 main .mainImageSection .imageSectionImg3 {
   position: absolute;
@@ -222,29 +209,8 @@ main .mainSectionOne .smallImg {
   top: 63%;
 }
 main .mainSectionTwo {
-  /*         overflow-x: hidden;
-  position: relative;
-  .mainSectionTwoArticleFlex{
-      display: flex;
-      position: relative;
-      padding-top: 45vh;
-      margin-bottom: 10vh;
-      div{
-          width: 50%;
-          .sectionHeadline{
-              font-size: 4rem;
-              width: 50%;
-          }
-          .sectionText{
-              width: 70%;
-              font-size: 1.5rem;
-              margin-bottom: 1.5rem
-          }
-          .sectionNumber{
-              margin-bottom: 1.5rem;
-          }
-      }
-  } */
+  height: 1000px;
+  overflow-x: hidden;
   /*         .circle{
               @keyframes rotate {
                   0%{transform: rotate(0deg)};
@@ -263,21 +229,68 @@ main .mainSectionTwo {
               width: 30%;
           } */
 }
-main .mainSectionTwo .circle {
-  position: absolute;
-  width: 30%;
-}
-main .mainSectionTwo .testImg {
+main .mainSectionTwo .circleContainer {
   position: relative;
 }
-main .mainSectionTwo .testImg .smallerImage {
+main .mainSectionTwo .circleContainer .circle {
+  position: absolute;
+  left: 85%;
+  top: 10%;
+  width: 35%;
+  margin-top: -5rem;
+}
+main .mainSectionTwo .smallerImageContainer {
+  position: relative;
+  top: 52%;
+}
+main .mainSectionTwo .smallerImageContainer .smallerImage {
   position: absolute;
   width: 30%;
-  left: 20%;
-  bottom: 20%;
+  left: 15%;
+  z-index: 2;
 }
-main .mainSectionTwo .testImg .biggerImage {
+main .mainSectionTwo .biggerImageContainer {
+  position: relative;
+  top: 47%;
+}
+main .mainSectionTwo .biggerImageContainer .biggerImage {
   position: absolute;
   width: 50%;
   left: 40%;
-}/*# sourceMappingURL=style.css.map */
+}
+main .mainSectionTwo .mainSectionTwoArticleFlex {
+  position: absolute;
+  display: flex;
+  padding-top: 15vh;
+  margin-bottom: 10vh;
+}
+main .mainSectionTwo .mainSectionTwoArticleFlex div {
+  width: 50%;
+}
+main .mainSectionTwo .mainSectionTwoArticleFlex div .sectionHeadline {
+  font-size: 4rem;
+  width: 50%;
+}
+main .mainSectionTwo .mainSectionTwoArticleFlex div .sectionText {
+  width: 70%;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+main .mainSectionTwo .mainSectionTwoArticleFlex div .sectionNumber {
+  margin-bottom: 1.5rem;
+}
+
+/*         .imgTest{
+            position: relative;
+            .largeImg{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 20%;
+            }
+            .smallImg{
+                position: absolute;
+                width: 20%;
+                top:50%
+        }
+    } *//*# sourceMappingURL=style.css.map */
