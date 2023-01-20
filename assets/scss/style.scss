@@ -171,7 +171,7 @@ main{
     .mainSectionOne{
         background-color: $black;
         color: $white;
-        padding-bottom: 35vh;
+        padding-bottom: 55vh;
         position: relative;
         .mainSectionOneArticleFlex{
             display: flex;
@@ -208,9 +208,11 @@ main{
     }
     .mainSectionTwo{
         /* mit min-height kein y-scroll */
-        height: 110vh;
+        min-height: 150vh;
 /*         margin-bottom: 20vh; */
         overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
         .circleContainer{
             position: relative;
             @keyframes rotate {
@@ -222,7 +224,7 @@ main{
             }
             .circle{
                 position: absolute;
-                left: 85%;
+                left: 87%;
                 top: 10%;
                 width: 35%;
                 margin-top: -5rem;
@@ -233,21 +235,23 @@ main{
             }
         }
             .smallerImageContainer{
-                position: relative;
-                top: 48%;
+/*                 position: relative; */
+
                 .smallerImage{
                     position: absolute;
                     width: 30%;
                     left: 15%;
+                    top: 38%;
                     z-index: 2;
                 }
             }
             .biggerImageContainer{
-                position: relative;
-                top: 42%;
+/*                 position: relative; */
+/*                 top: 42%; */
                 .biggerImage{
                     position: absolute;
                     width: 50%;
+                    top: 30%;
                     left:40%;
                 }
             }
@@ -303,16 +307,17 @@ footer{
             position: absolute;
             left: 32%;
             height: 5rem;
-            width: 60rem;
+            width: 80rem;
             background-color: white;
             rotate: 40deg;
+            font-weight: bold;
             }
         .bannerText{
             display: flex;
             font-size: 4rem;
             width: 100%;
             /* padding-left: 4rem; */
-            animation: banner 10s infinite;
+            animation: banner 10s infinite linear;
             color: black;
             span{
                 margin-left: 1rem;

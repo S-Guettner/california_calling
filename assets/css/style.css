@@ -173,7 +173,7 @@ main .mainImageSection .imageSectionImg7 {
 main .mainSectionOne {
   background-color: #000;
   color: #fff;
-  padding-bottom: 35vh;
+  padding-bottom: 55vh;
   position: relative;
 }
 main .mainSectionOne .mainSectionOneArticleFlex {
@@ -210,9 +210,11 @@ main .mainSectionOne .smallImg {
 }
 main .mainSectionTwo {
   /* mit min-height kein y-scroll */
-  height: 110vh;
+  min-height: 150vh;
   /*         margin-bottom: 20vh; */
   overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
 }
 main .mainSectionTwo .circleContainer {
   position: relative;
@@ -236,7 +238,7 @@ main .mainSectionTwo .circleContainer {
 }
 main .mainSectionTwo .circleContainer .circle {
   position: absolute;
-  left: 85%;
+  left: 87%;
   top: 10%;
   width: 35%;
   margin-top: -5rem;
@@ -246,22 +248,23 @@ main .mainSectionTwo .circleContainer .circle {
   animation-timing-function: linear;
 }
 main .mainSectionTwo .smallerImageContainer {
-  position: relative;
-  top: 48%;
+  /*                 position: relative; */
 }
 main .mainSectionTwo .smallerImageContainer .smallerImage {
   position: absolute;
   width: 30%;
   left: 15%;
+  top: 38%;
   z-index: 2;
 }
 main .mainSectionTwo .biggerImageContainer {
-  position: relative;
-  top: 42%;
+  /*                 position: relative; */
+  /*                 top: 42%; */
 }
 main .mainSectionTwo .biggerImageContainer .biggerImage {
   position: absolute;
   width: 50%;
+  top: 30%;
   left: 40%;
 }
 main .mainSectionTwo .mainSectionTwoArticleFlex {
@@ -322,16 +325,17 @@ footer .movingBanner {
   position: absolute;
   left: 32%;
   height: 5rem;
-  width: 60rem;
+  width: 80rem;
   background-color: white;
   rotate: 40deg;
+  font-weight: bold;
 }
 footer .bannerText {
   display: flex;
   font-size: 4rem;
   width: 100%;
   /* padding-left: 4rem; */
-  animation: banner 10s infinite;
+  animation: banner 10s infinite linear;
   color: black;
   /*  } */
 }
